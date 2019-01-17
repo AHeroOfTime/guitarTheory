@@ -1,0 +1,44 @@
+body {
+  padding: 5rem 1rem;
+  background: rgb(92, 92, 92);
+  overflow-x: hidden;
+}
+
+.neck {
+  margin: 0 auto;
+  background: #fff;
+  width: 1800px;
+  height: 600px;
+}
+.frets {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: stretch;
+  justify-items: stretch;
+  height: 100%;
+}
+
+.fret {
+  display: grid;
+  align-content: center;
+  align-items: stretch;
+  justify-items: stretch;
+  text-align: center;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+span {
+  /*  */
+}
+
+.open {
+  background: rgb(141, 141, 141);
+  color: #fff;
+}
+
+.open:hover {
+  background: #fff;
+  color: #000;
+}
