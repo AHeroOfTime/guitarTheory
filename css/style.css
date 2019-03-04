@@ -4,6 +4,12 @@ body {
   overflow-x: hidden;
 }
 
+h1.title {
+  margin: 2rem auto;
+  width: 1800px;
+  text-align: center;
+}
+
 .neck {
   margin: 0 auto;
   background: #fff;
@@ -29,12 +35,16 @@ body {
   border: 1px solid #000;
 }
 
-span {
-  /*  */
+.twelfth {
+  background: #aaa;
 }
 
+/* span {
+
+} */
+
 .open {
-  background: rgb(141, 141, 141);
+  background: #aaa;
   color: #fff;
 }
 
