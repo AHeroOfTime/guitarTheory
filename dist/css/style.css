@@ -38,11 +38,6 @@ h1.title {
 .twelfth {
   background: #aaa;
 }
-
-/* span {
-
-} */
-
 .open {
   background: #aaa;
   color: #fff;
@@ -51,4 +46,9 @@ h1.title {
 .open:hover {
   background: #fff;
   color: #000;
+}
+
+/* JS Added Props */
+.highlight {
+  background: goldenrod;
 }
