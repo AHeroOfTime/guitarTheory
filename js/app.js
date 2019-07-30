@@ -8,23 +8,18 @@ fretsArr.forEach(fret => fret.addEventListener('mouseenter', hoverHighlight));
 // Second eventlistener for mouseleave to remove highlight?
 fretsArr.forEach(fret => fret.addEventListener('mouseleave', removeHighlight));
 
-// console.log(fretsArr);
-
 // Functions
-function hoverHighlight() {
-  // Get current item - make own function for grabbing current fret? (move up^)
-
-  // Loop over and check
-  // currently adds highlight on any fret hover
+function hoverHighlight(e) {
+  // Loop over and check data-attr
   fretsArr.forEach(fret => {
-    if (fret.dataset.note.includes('E')) {
+    if (fret.dataset.note === e.target.dataset.note) {
       fret.classList.add('highlight');
     }
   });
 }
 
 // remove highlight function v
-function removeHighlight() {
+function removeHighlight(e) {
   fretsArr.forEach(fret => {
     if (fret.dataset.note) {
       fret.classList.remove('highlight');
